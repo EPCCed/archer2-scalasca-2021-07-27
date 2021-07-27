@@ -1,8 +1,8 @@
 # archer2-scalasca-2021-07-27
 
 <img src="./images/Archer2_logo.png" width="355" height="100"
-align="left"> <img src="./images/epcc_logo.jpg" align="right"
-width="133" height="100"> <img src="./images/scalasca-logo.png" align="centre" width="400" height="70">
+align="left">  <img src="./images/scalasca-logo.png" align="centre" width="400" height="70"> <img src="./images/epcc_logo.jpg" align="right"
+width="133" height="100">
 
 <br /><br /><br /><br /><br />
 
