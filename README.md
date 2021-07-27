@@ -2,8 +2,7 @@
 
 <img src="./images/Archer2_logo.png" width="355" height="100"
 align="left"> <img src="./images/epcc_logo.jpg" align="right"
-width="133" height="100"> <img src="./images/scalasca-logo.png" align="centre"
-width="133" height="100">
+width="133" height="100"> <img src="./images/scalasca-logo.png" align="centre" height="100">
 
 <br /><br /><br /><br /><br />
 
