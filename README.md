@@ -10,10 +10,10 @@ width="133" height="100">
 
 <h3>Slides</h3>
 
-<a href="Cube.pdf">Cube.pdf</a>
-<a href="Intro.pdf">Intro.pdf</a>
-<a href="Scalasca.pdf">Scalasca.pdf</a>
-<a href="Score-P_basic.pdf">Score-P_basic.pdf</a>
-<a href="Score-P_filtering.pdf">Score-P_filtering.pdf</a>
-<a href="Score-P_special.pdf">Score-P_special.pdf</a>
+<a href="slides/Cube.pdf">Cube.pdf</a>
+<a href="slides/Intro.pdf">Intro.pdf</a>
+<a href="slides/Scalasca.pdf">Scalasca.pdf</a>
+<a href="slides/Score-P_basic.pdf">Score-P_basic.pdf</a>
+<a href="slides/Score-P_filtering.pdf">Score-P_filtering.pdf</a>
+<a href="slides/Score-P_special.pdf">Score-P_special.pdf</a>
 
