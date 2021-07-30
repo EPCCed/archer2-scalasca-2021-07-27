@@ -18,6 +18,7 @@ width="133" height="100">
  * <a href="slides/Score-P_filtering.pdf">Score-P_filtering.pdf</a>
  * <a href="slides/Score-P_special.pdf">Score-P_special.pdf</a>
 
-<h3>Examples<h3>
+<h3>Examples</h3>
+
  * <a href="samples">Samples</a>
  * <a href="samples.tar.gz">Complete samples directory as a gzip'd tar file</a>
