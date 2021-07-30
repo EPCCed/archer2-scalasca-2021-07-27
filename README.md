@@ -21,4 +21,4 @@ width="133" height="100">
 <h3>Examples</h3>
 
  * <a href="samples">Samples</a>
- * <a href="samples.tar.gz">Complete samples directory as a gzip'd tar file</a>
+ * <a href="https://github.com/EPCCed/archer2-scalasca-2021-07-27/raw/main/samples.tar.gz">Complete samples directory as a gzip'd tar file</a>
