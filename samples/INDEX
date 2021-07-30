@@ -1,0 +1,15 @@
+Sample Score-P measurements
+
+(bt-mz_C.8 run on a single node of Archer2 with 8 MPI processes each with 6 OpenMP threads)
+
+scorep_bt-mz_C_8x6_sum.def/ 	       default (profile) measurement
+scorep_bt-mz_C_8x6_sum.filt/	       filtered (profile) measurement
+scorep_bt-mz_C_8x6_sum.hwc/	       filtered (profile) measurement with 2 hardware counters
+scorep_bt-mz_C_8x6_trace/	       filtered trace measurement and automated analysis
+scorep_bt-mz_sum/		       default (profile) measurement
+
+(tea_leaf run on four nodes of JURECA@JSC with 8 MPI processes each with 12 OpenMP threads)
+
+scorep_tea_leaf_baseline_8x12_sum/	default (profile) measurement (baseline version)
+scorep_tea_leaf_baseline_8x12_trace/	trace measurement and automated analysis (baseline version)
+scorep_tea_leaf_optimized_8x12_trace/	trace measurement and automated analysis (optimized version)

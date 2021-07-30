@@ -1,0 +1,11 @@
+SCOREP_REGION_NAMES_BEGIN
+  EXCLUDE
+    binvcrhs*
+    matmul_sub*
+    matvec_sub*
+    exact_solution*
+    binvrhs*
+    lhs*init*
+    timer_*
+SCOREP_REGION_NAMES_END
+

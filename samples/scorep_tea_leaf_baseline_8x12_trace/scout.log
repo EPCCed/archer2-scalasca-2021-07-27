@@ -1,0 +1,31 @@
+S=C=A=N: Thu Jun  6 09:45:42 2019: Analyze start
+/usr/bin/srun /usr/local/software/jureca/Stages/2019a/software/Scalasca/2.5-iimpi-2019a/bin/scout.hyb --time-correct ./scorep_tea_leaf_baseline_8x12_trace/traces.otf2
+SCOUT   (Scalasca 2.5)
+Copyright (c) 1998-2019 Forschungszentrum Juelich GmbH
+Copyright (c) 2009-2014 German Research School for Simulation Sciences GmbH
+
+Analyzing experiment archive ./scorep_tea_leaf_baseline_8x12_trace/traces.otf2
+
+Opening experiment archive ... done (0.006s).
+Reading definition data    ... done (0.010s).
+Reading event trace data   ... done (1.917s).
+Preprocessing              ... done (2.369s).
+Timestamp correction       ... done (14.848s).
+Analyzing trace data       ... done (83.156s).
+Writing analysis report    ... done (0.637s).
+
+Max. memory usage         : 6516.676MB
+
+	# passes        : 1
+	# violated      : 622207
+	# corrected     : 166678196
+	# reversed-p2p  : 0
+	# reversed-coll : 14908
+	# reversed-omp  : 607299
+	# events        : 304112050
+	max. error      : 0.000018 [s]
+	error at final. : 0.000000 [%] 
+	Max slope       : 0.050454423  
+
+Total processing time     : 103.429s
+S=C=A=N: Thu Jun  6 09:47:27 2019: Analyze done (status=0) 105s

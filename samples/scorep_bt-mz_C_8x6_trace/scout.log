@@ -1,0 +1,24 @@
+S=C=A=N: Mon Jul 26 12:31:39 2021: Analyze start
+/usr/bin/srun /work/y23/shared/scalasca/scalasca/v2.6/PrgEnv-gnu/bin/backend/scout.hyb --time-correct ./scorep_bt-mz_C_8x6_trace/traces.otf2
+SCOUT   (Scalasca 2.6)
+Copyright (c) 1998-2021 Forschungszentrum Juelich GmbH
+Copyright (c) 2014-2021 RWTH Aachen University
+Copyright (c) 2009-2014 German Research School for Simulation Sciences GmbH
+
+Analyzing experiment archive ./scorep_bt-mz_C_8x6_trace/traces.otf2
+
+Opening experiment archive ... done (0.014s).
+Reading definition data    ... done (0.030s).
+Reading event trace data   ... done (0.163s).
+Preprocessing              ... done (0.370s).
+Timestamp correction       ... done (0.557s).
+Analyzing trace data       ... done (7.563s).
+Writing analysis report    ... done (0.169s).
+
+Max. memory usage         : 812.453MB
+
+	# passes        : 1
+	# violated      : 0
+
+Total processing time     : 8.931s
+S=C=A=N: Mon Jul 26 12:31:49 2021: Analyze done (status=0) 10s

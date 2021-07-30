@@ -1,0 +1,105 @@
+
+Estimated aggregate size of event trace:                   659MB
+Estimated requirements for largest trace buffer (max_buf): 83MB
+Estimated memory requirements (SCOREP_TOTAL_MEMORY):       95MB
+(hint: When tracing set SCOREP_TOTAL_MEMORY=95MB to avoid intermediate flushes
+ or reduce requirements using USR regions filters.)
+
+flt     type max_buf[B]     visits time[s] time[%] time/visit[us]  region
+         ALL 86,356,254 17,085,681  575.46   100.0          33.68  ALL
+         OMP 83,713,600 16,327,168  570.85    99.2          34.96  OMP
+         COM  2,355,080    724,640    0.58     0.1           0.80  COM
+         MPI    287,524     33,856    3.73     0.6         110.09  MPI
+         USR         50          9    0.19     0.0       20674.79  USR
+
+         OMP  6,715,008    617,472    1.86     0.3           3.01  !$omp parallel @exch_qbc.f:204
+         OMP  6,715,008    617,472    1.84     0.3           2.98  !$omp parallel @exch_qbc.f:215
+         OMP  6,715,008    617,472    1.81     0.3           2.93  !$omp parallel @exch_qbc.f:244
+         OMP  6,715,008    617,472    1.90     0.3           3.07  !$omp parallel @exch_qbc.f:255
+         OMP  3,374,208    310,272    1.99     0.3           6.42  !$omp parallel @rhs.f:28
+         OMP  3,357,504    308,736    1.01     0.2           3.29  !$omp parallel @add.f:22
+         OMP  3,357,504    308,736    1.11     0.2           3.61  !$omp parallel @z_solve.f:43
+         OMP  3,357,504    308,736    1.14     0.2           3.70  !$omp parallel @y_solve.f:43
+         OMP  3,357,504    308,736    1.25     0.2           4.04  !$omp parallel @x_solve.f:46
+         OMP  2,006,784    617,472    0.75     0.1           1.22  !$omp do @exch_qbc.f:204
+         OMP  2,006,784    617,472    0.61     0.1           0.99  !$omp implicit barrier @exch_qbc.f:213
+         OMP  2,006,784    617,472    1.14     0.2           1.85  !$omp do @exch_qbc.f:215
+         OMP  2,006,784    617,472    0.63     0.1           1.02  !$omp implicit barrier @exch_qbc.f:224
+         OMP  2,006,784    617,472    0.76     0.1           1.23  !$omp do @exch_qbc.f:244
+         OMP  2,006,784    617,472    0.59     0.1           0.95  !$omp implicit barrier @exch_qbc.f:253
+         OMP  2,006,784    617,472    1.23     0.2           2.00  !$omp do @exch_qbc.f:255
+         OMP  2,006,784    617,472    0.67     0.1           1.09  !$omp implicit barrier @exch_qbc.f:264
+         OMP  1,008,384    310,272    0.92     0.2           2.97  !$omp implicit barrier @rhs.f:439
+         OMP  1,008,384    310,272   16.09     2.8          51.87  !$omp do @rhs.f:37
+         OMP  1,008,384    310,272   10.57     1.8          34.07  !$omp do @rhs.f:62
+         OMP  1,008,384    310,272    6.14     1.1          19.77  !$omp implicit barrier @rhs.f:72
+         OMP  1,008,384    310,272   12.10     2.1          38.99  !$omp do @rhs.f:80
+         OMP  1,008,384    310,272   11.83     2.1          38.14  !$omp do @rhs.f:191
+         OMP  1,008,384    310,272    8.66     1.5          27.92  !$omp do @rhs.f:301
+         OMP  1,008,384    310,272    5.19     0.9          16.71  !$omp implicit barrier @rhs.f:353
+         OMP  1,008,384    310,272    1.06     0.2           3.42  !$omp do @rhs.f:359
+         OMP  1,008,384    310,272    0.52     0.1           1.67  !$omp do @rhs.f:372
+         OMP  1,008,384    310,272    4.32     0.8          13.92  !$omp do @rhs.f:384
+         OMP  1,008,384    310,272    1.05     0.2           3.37  !$omp do @rhs.f:400
+         OMP  1,008,384    310,272    0.43     0.1           1.38  !$omp do @rhs.f:413
+         OMP  1,008,384    310,272    1.40     0.2           4.50  !$omp implicit barrier @rhs.f:423
+         OMP  1,008,384    310,272    1.60     0.3           5.15  !$omp do @rhs.f:428
+         OMP  1,003,392    308,736    6.23     1.1          20.19  !$omp do @add.f:22
+         OMP  1,003,392    308,736    0.90     0.2           2.90  !$omp implicit barrier @add.f:33
+         OMP  1,003,392    308,736   18.18     3.2          58.87  !$omp implicit barrier @z_solve.f:428
+         OMP  1,003,392    308,736  138.29    24.0         447.92  !$omp do @z_solve.f:52
+         OMP  1,003,392    308,736   21.64     3.8          70.10  !$omp implicit barrier @y_solve.f:406
+         OMP  1,003,392    308,736  133.63    23.2         432.83  !$omp do @y_solve.f:52
+         OMP  1,003,392    308,736   20.37     3.5          65.99  !$omp implicit barrier @x_solve.f:407
+         OMP  1,003,392    308,736  129.00    22.4         417.83  !$omp do @x_solve.f:54
+         COM    668,928    205,824    0.10     0.0           0.50  copy_x_face
+         COM    668,928    205,824    0.10     0.0           0.48  copy_y_face
+         COM    168,064     51,712    0.02     0.0           0.41  compute_rhs
+         OMP    168,064     51,712    0.03     0.0           0.52  !$omp master @rhs.f:74
+         OMP    168,064     51,712    0.01     0.0           0.25  !$omp master @rhs.f:183
+         OMP    168,064     51,712    0.01     0.0           0.28  !$omp master @rhs.f:293
+         OMP    168,064     51,712    0.01     0.0           0.16  !$omp master @rhs.f:424
+         COM    167,232     51,456    0.09     0.0           1.82  adi
+         COM    167,232     51,456    0.03     0.0           0.52  x_solve
+         COM    167,232     51,456    0.03     0.0           0.50  y_solve
+         COM    167,232     51,456    0.03     0.0           0.49  z_solve
+         COM    167,232     51,456    0.02     0.0           0.42  add
+         MPI    125,223     11,256    0.02     0.0           1.55  MPI_Irecv
+         MPI    125,223     11,256    0.02     0.0           2.06  MPI_Isend
+         MPI     36,582     11,256    2.54     0.4         225.78  MPI_Waitall
+         OMP     24,960      7,680    0.00     0.0           0.17  !$omp atomic @error.f:51
+         OMP     24,960      7,680    0.00     0.0           0.16  !$omp atomic @error.f:104
+         OMP     16,704      1,536    0.01     0.0           4.60  !$omp parallel @initialize.f:28
+         OMP     16,704      1,536    0.01     0.0           4.34  !$omp parallel @error.f:27
+         OMP     16,704      1,536    0.01     0.0           4.89  !$omp parallel @error.f:86
+         COM      5,226      1,608    0.11     0.0          68.52  exch_qbc
+         COM      5,200      1,600    0.02     0.0           9.76  ITERATION
+         OMP      4,992      1,536    0.00     0.0           1.49  !$omp implicit barrier @initialize.f:204
+         OMP      4,992      1,536    0.03     0.0          20.53  !$omp do @initialize.f:31
+         OMP      4,992      1,536    0.22     0.0         140.68  !$omp do @initialize.f:50
+         OMP      4,992      1,536    0.00     0.0           1.10  !$omp do @initialize.f:100
+         OMP      4,992      1,536    0.00     0.0           1.07  !$omp do @initialize.f:119
+         OMP      4,992      1,536    0.00     0.0           1.55  !$omp do @initialize.f:137
+         OMP      4,992      1,536    0.00     0.0           1.64  !$omp do @initialize.f:156
+         OMP      4,992      1,536    0.03     0.0          17.80  !$omp implicit barrier @initialize.f:167
+         OMP      4,992      1,536    0.00     0.0           1.27  !$omp do @initialize.f:174
+         OMP      4,992      1,536    0.00     0.0           1.95  !$omp do @initialize.f:192
+         OMP      4,992      1,536    0.01     0.0           3.29  !$omp implicit barrier @error.f:54
+         OMP      4,992      1,536    0.06     0.0          35.85  !$omp do @error.f:33
+         OMP      4,992      1,536    0.00     0.0           1.14  !$omp implicit barrier @error.f:107
+         OMP      4,992      1,536    0.01     0.0           3.51  !$omp do @error.f:91
+         COM        832        256    0.00     0.0           0.43  initialize
+         COM        832        256    0.00     0.0           0.56  rhs_norm
+         COM        832        256    0.00     0.0           0.52  error_norm
+         MPI        204         24    0.00     0.0          26.17  MPI_Reduce
+         MPI        136         16    0.02     0.0        1513.52  MPI_Barrier
+         MPI         52         16    0.00     0.0           0.95  MPI_Comm_rank
+         COM         26          8    0.04     0.0        5011.43  bt
+         COM         26          8    0.00     0.0          84.27  verify
+         COM         26          8    0.00     0.0          51.13  mpi_setup
+         USR         26          1    0.00     0.0          32.99  print_results
+         MPI         26          8    0.00     0.0           4.63  MPI_Comm_size
+         MPI         26          8    0.00     0.0         589.54  MPI_Comm_split
+         MPI         26          8    0.00     0.0          54.33  MPI_Finalize
+         MPI         26          8    1.12     0.2      139384.73  MPI_Init_thread
+         USR         24          8    0.19     0.0       23255.02  MEASUREMENT OFF

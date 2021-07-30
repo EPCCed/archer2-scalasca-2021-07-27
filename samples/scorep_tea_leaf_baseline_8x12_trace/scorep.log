@@ -1,0 +1,80 @@
+S=C=A=N: Thu Jun  6 09:44:01 2019: Collect start
+/usr/bin/srun ./tea_leaf_baseline
+ 
+   Tea Version    1.000
+       MPI Version
+    OpenMP Version
+   Task Count      8
+ Thread Count:    12
+ 
+ 
+   Tea Version    1.000
+       MPI Version
+    OpenMP Version
+   Task Count      8
+ Thread Count:    12
+ 
+ Output file tea.out opened. All output will go there.
+ Step       1 time   0.0000000 timestep   4.00E-03
+Conduction error  0.9875623E-15
+Iteration count     2931
+ Wall clock    12.7281920909882     
+ Average time per cell   7.955120056867600E-007
+ Step time per cell      7.954715043306351E-007
+ Step       2 time   0.0040000 timestep   4.00E-03
+Conduction error  0.9783148E-15
+Iteration count     2785
+ Wall clock    24.7315380573273     
+ Average time per cell   7.728605642914772E-007
+ Step time per cell      7.502048164606095E-007
+ Step       3 time   0.0080000 timestep   4.00E-03
+Conduction error  0.9858883E-15
+Iteration count     2626
+ Wall clock    36.0542728900909     
+ Average time per cell   7.511306852102280E-007
+ Step time per cell      7.076648026704788E-007
+ Step       4 time   0.0120000 timestep   4.00E-03
+Conduction error  0.9912885E-15
+Iteration count     2467
+ Wall clock    46.6794168949127     
+ Average time per cell   7.293658889830113E-007
+ Step time per cell      6.640673875808716E-007
+ Step       5 time   0.0160000 timestep   4.00E-03
+Conduction error  0.9863951E-15
+Iteration count     2320
+ Wall clock    56.6847090721130     
+ Average time per cell   7.085588634014130E-007
+ Step time per cell      6.253262460231781E-007
+ Step       6 time   0.0200000 timestep   4.00E-03
+Conduction error  0.9844876E-15
+Iteration count     2182
+ Wall clock    66.0858089923859     
+ Average time per cell   6.883938436706860E-007
+ Step time per cell      5.875644981861114E-007
+ Step       7 time   0.0240000 timestep   4.00E-03
+Conduction error  0.9866404E-15
+Iteration count     2063
+ Wall clock    74.9887199401855     
+ Average time per cell   6.695421423230852E-007
+ Step time per cell      5.564270615577698E-007
+ Step       8 time   0.0280000 timestep   4.00E-03
+Conduction error  0.9964614E-15
+Iteration count     1964
+ Wall clock    83.4543349742889     
+ Average time per cell   6.519869919866323E-007
+ Step time per cell      5.290968120098114E-007
+ Step       9 time   0.0320000 timestep   4.00E-03
+Conduction error  0.9906575E-15
+Iteration count     1873
+ Wall clock    91.5288159847260     
+ Average time per cell   6.356167776717080E-007
+ Step time per cell      5.046504437923431E-007
+ Step      10 time   0.0360000 timestep   4.00E-03
+Conduction error  0.9508074E-15
+Iteration count     1775
+ Wall clock    99.1863539218903     
+ Average time per cell   6.199147120118141E-007
+ Step time per cell      4.785912483930587E-007
+ First step overhead  0.724267005920410     
+ Wall clock    99.1876640319824     
+S=C=A=N: Thu Jun  6 09:45:42 2019: Collect done (status=0) 101s
